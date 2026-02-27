@@ -1,5 +1,6 @@
 package chuntfungus.bismuth;
 
+import chuntfungus.bismuth.block.ModBlocks;
 import chuntfungus.bismuth.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -22,6 +23,7 @@ public class Bismuth implements ModInitializer {
 		// Proceed with mild caution.
 
 		ModItems.initialize();
+		ModBlocks.initialize();
 
 		LOGGER.info("Hello Fabric world!");
 	}

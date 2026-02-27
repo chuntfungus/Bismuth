@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bismuth:block/bismuth_ore"
+    }
+  }
+}
