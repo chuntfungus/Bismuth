@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "bismuth",
+	"version": "${version}",
+	"name": "Bismuth",
+	"description": "An advanced Magicka mod for Minecraft!",
+	"authors": [
+		"ChuntFungus!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bismuth/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"chuntfungus.bismuth.Bismuth"
+		],
+		"client": [
+			"chuntfungus.bismuth.BismuthClient"
+		]
+	},
+	"mixins": [
+		"bismuth.mixins.json",
+		{
+			"config": "bismuth.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
